@@ -1,0 +1,54 @@
+<section class="row bg-dark border rounded">
+  <div class="col-12 d-flex flex-column justify-content-center align-items-stretch">
+		<h3>Register</h3>
+		<form class="form-register" id="registerForm">
+			<div class="row">
+				<div class="col">
+					<div class="input-group input-group-sm  mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+            </div>
+            <input name="username" type="text" value="" class="input form-control" id="username" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+          </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><i class="fas fa-at"></i></span>
+            </div>
+            <input name="email" type="email" value="" class="input form-control" id="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" />
+          </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
+            </div>
+            <input name="password" type="password" value="" class="input form-control" id="password" placeholder="password" required="true" aria-label="password" aria-describedby="basic-addon1" />
+            <div class="input-group-append">
+              <span class="input-group-text" onclick="password_show_hide();">
+                <i class="fas fa-eye" id="show_eye"></i>
+                <i class="fas fa-eye-slash d-none" id="hide_eye"></i>
+              </span>
+            </div>
+          </div>
+				</div>
+			</div>
+			<div class="row">
+        <div class="col-sm-12 pt-3 text-right">
+          <p>Already registered? <a href="/user/login/">Login</a></p>
+        </div>
+			</div>
+			<div class="row justify-content-between">
+				<div class="col">
+				  <div id="captcha"></div>
+					<button class="btn btn-primary" name="submit" id="submitButton" type="submit">Login</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>

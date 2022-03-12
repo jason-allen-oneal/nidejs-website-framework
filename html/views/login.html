@@ -1,0 +1,52 @@
+<section class="row bg-dark border rounded">
+  <div class="col-12 d-flex flex-column justify-content-center align-items-stretch">
+		<h3>Login</h3>
+		<form method="post" class="form-login" id="loginForm" action="/user/login/">
+			<div class="row">
+				<div class="col">
+					<div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addonUser"><i class="fas fa-user"></i></span>
+            </div>
+            <input name="username" type="text" value="" class="input input-group form-control" id="username" placeholder="Username" aria-label="Username" aria-describedby="addonUser" />
+          </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addonPassword"><i class="fas fa-lock"></i></span>
+            </div>
+            <input name="password" type="password" value="" class="input form-control" id="password" placeholder="Password" required="true" aria-label="Password" aria-describedby="addonPassword" />
+            <div class="input-group-append">
+              <span class="input-group-text" onclick="password_show_hide();">
+                <i class="fas fa-eye d-none" id="show_eye"></i>
+                <i class="fas fa-eye-slash" id="hide_eye"></i>
+              </span>
+            </div>
+          </div>
+				</div>
+			</div>
+			<div class="row">
+			  <div class="col-6">
+          <div class="form-group form-check text-left">
+            <input type="checkbox" name="remember" class="form-check-input" id="remember_me" />
+            <label class="form-check-label" for="remember_me">Remember me</label>
+          </div>
+        </div>
+        <div class="col-sm-12 pt-3 text-right">
+          <p>Don't have an account? <a href="/user/register/">Register</a></p>
+        </div>
+			</div>
+			<div class="row justify-content-between">
+				<div class="col">
+					<button class="btn btn-primary" name="submit" id="submitButton" type="submit">Login</button>
+				</div>
+				<div class="col text-right">
+					<a href="/user/forgot-password/">Forgot Password</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>

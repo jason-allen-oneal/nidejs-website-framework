@@ -1,0 +1,57 @@
+<section class="content-section bg-dark border rounded">
+  <div class="row gx-4 gx-lg-5 justify-content-center">
+    <h6>My Profile</h6>
+    <form action="/user/account/" method="post">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col">
+            <img src="/images/avatars/{{user.avatar}}" alt="User Avatar">
+            <input class="form-control form-control-sm" id="avatar" name="avatar" type="file">
+          </div>
+          <div class="col">
+            <p class="text-bold large">{{user.name}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="email">Email</label>
+          </div>
+          <div class="col">
+            <input name="email" id="email" type="email" placeholder="something@example.com" value="{{user.email}}">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="password">Password</label>
+          </div>
+          <div class="col">
+            <input name="password" id="password" type="password" value="PASSWORD">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="bio">Bio</label>
+          </div>
+          <div class="col">
+            <textarea id="bio" name="bio" placeholder="Write your bio here" rows="4" cols="22">{{user.bio}}</textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col">
+            <label for="location">Location</label>
+          </div>
+          <div class="col">
+            <input id="location" name="location" type="text" placeholder="Location" value="{{user.location}}">
+          </div>
+        </div>
+			  <div class="row">
+				  <div class="col">
+				    <button id="profileSubmit" type="submit" class="btn btn-primary">Update Profile</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
